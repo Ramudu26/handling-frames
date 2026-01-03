@@ -6,10 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class Frames_practise {
+public class Frames_practise 
+{
+@Test()
+	public void frame()
+	{
 
-	public static void main(String[] args) {
 		WebDriver driver =new ChromeDriver();
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -48,8 +52,9 @@ public class Frames_practise {
 		//driver.switchTo().frame(0);
 		boolean status=driver.findElement(By.id("logo")).isDisplayed();
 		System.out.println(status);
-		
+		driver.close();
 		
 	}
+	}
 
-}
+

@@ -26,11 +26,10 @@ public class JavaScriptExecutor_Scrollbar_practice {
 		js.executeScript("arguments[0].setAttribute('value','john')", name);
 		
 		WebElement male=driver.findElement(By.xpath("//input[@id='male']"));
-		js.executeScript("arguments[0].click()", male);  
+		js.executeScript("arguments[0].click()", male);
 		
 		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
-		
 		
 		js.executeScript("window.scrollBy(0,2000)", "");
 		System.out.println(js.executeScript("return window.pageYOffset;")); 

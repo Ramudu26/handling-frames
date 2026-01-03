@@ -25,11 +25,11 @@ public class Rightclick_Doubleclick_Practices {
 		Actions a=new Actions(driver);
 		
 		//Right click()
-		/*WebElement button=driver.findElement(By.xpath("//*[text()='right click me']"));
+		WebElement button=driver.findElement(By.xpath("//*[text()='right click me']"));
 		a.contextClick(button).build().perform();
 		WebElement edit=driver.findElement(By.xpath("//li[@class='context-menu-item context-menu-icon context-menu-icon-edit']"));
 		edit.click();
-		driver.switchTo().alert().accept(); */
+		driver.switchTo().alert().accept(); 
 		
 		//Double click()
 		

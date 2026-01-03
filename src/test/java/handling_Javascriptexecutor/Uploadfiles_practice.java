@@ -18,9 +18,9 @@ public class Uploadfiles_practice {
         driver.get("https://davidwalsh.name/demo/multiple-file-upload.php");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
-/*single file upload		
+//single file upload		
 driver.findElement(By.xpath("//input[@name='filesToUpload']")).sendKeys("C:\\Users\\LENOVO\\eclipse-workspace\\Seleniumwebdriver\\testdata\\text1.txt");
-	*/
+	
 	//multiple files upload
 String file1="C:\\Users\\LENOVO\\eclipse-workspace\\Seleniumwebdriver\\testdata\\text1.txt";
 String file2="C:\\Users\\LENOVO\\eclipse-workspace\\Seleniumwebdriver\\testdata\\text2.txt";
